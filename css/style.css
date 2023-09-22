@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+/*fonts*/
+.home .slide-container .slide .content span,
+.blog h1, .blog span
+{
+    font-family: 'Permanent Marker', cursive;
+    
+}
+.home .slide-container .slide .content h3,
+.blog .box-container .box p
+{
+    font-family: 'Lilita One', cursive;
+}
+.home .slide-container .slide .content a,
+.blog .box-container .box h3
+{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+
+*{
+    font-family:iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+html{
+    font-size: 70%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgb(157, 118, 193);
+   
+}
+header .logo{
+    font-size: 2rem;
+    color: #5B0888;
+    font-weight: 500;
+    font-family: 'Black Ops One', cursive;
+}
+header .navbar a{
+    font-size: 2rem;
+    color: #5B0888;
+    margin: 0 2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    
+}
+header .navbar a:hover{
+    color: black;
+    background: #6807f0;
+    transition: .4s;
+    border: 1px solid #f7f7f7;
+    border-radius: 2px;
+}
+header .icons a{
+    font-size: 2rem;
+    color: #5B0888;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color: black;
+}
+#menu-bar{
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    color: #5B0888;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*HOME*/
+/*HOME*/
+section{
+    padding: 2rem 9%;
+}
+.home{
+    padding: 0;
+    position: relative;
+}
+.home .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 9%;
+    padding-top: 9rem;
+    margin: 0 4.2rem;
+}
+.home .slide-container .slide .content{
+    flex: 1 1 40rem;
+    animation: slideContent .1s linear .2s backwards;
+}
+@keyframes slideContent{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+.home .slide-container .slide .image{
+    flex: 1 1 50rem;
+    position: relative;
+    z-index: 0;
+}
+
+#pumarsize
+{
+    padding-bottom: 13rem;
+   
+}
+.home .slide-container .slide .image .shoe{
+    width: 100%;
+    
+    animation: shoe .1s linear;
+}
+@keyframes shoe{
+    0%{
+        transform: rotate(0deg) scale(.5);
+    }
+}
+.home .slide-container{
+    display: none;
+}
+.home .slide-container.active{
+    display: block;
+}
+.home #prev,.home #next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+        height: 5rem;
+        width: 5rem;
+        line-height: 5.5rem;
+        font-size: 2rem;
+        color: #3e0a99;
+        text-align: center;
+        cursor: pointer;
+    }
+ 
+    .home #prev{
+        left: 3rem;
+        position: fixed
+    }
+    .home #next{
+        right: 3rem;
+        position: fixed;
+    }
+
+
+/*offwhit*/
+#menu-bar
+{
+    background-color: aqua;
+}
+#offwhite
+{
+    background: url(imgbg/offwhit.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#offwhite .content span{
+    color: rgb(255, 0, 0);
+    font-size: 5rem;
+    letter-spacing: 8px;
+}
+#offwhite .content h3{
+    font-size: 3rem;
+    color: rgb(3, 13, 90);
+}
+#offwhite .content a{
+    display: inline-block;
+    margin-top: 1rem;   
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    background: #008cff;
+    padding: .8rem 3rem;
+    color:#000;
+        
+}
+#offwhite .content a:hover{
+ 
+    background: #003e85;
+    color: wheat;
+    transition: .7s;
+    font-size: 2.3rem;
+    box-shadow: 0 .5rem 7rem blue;
+}
+/*Matecontrol*/
+#Matcontrol2
+{
+    background: url(imgbg/matcontrol.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+#Matcontrol2 .content span{
+    color: rgb(101, 62, 125);
+    font-size: 5rem;
+    letter-spacing: 8px;
+}
+#Matcontrol2 .content h3{
+    font-size: 3rem;
+    color: rgb(6, 6, 6);
+}
+#Matcontrol2 .content a{
+    display: inline-block;
+    margin-top: 1.5rem;   
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    background: rgb(212, 170, 4);
+    padding: .8rem 3rem;
+    color:#000;
+    
+}
+#Matcontrol2 .content a:hover{
+ 
+    background: black;
+    color: rgb(212, 170, 4);
+    transition: .7s;
+    font-size: 3rem;
+    box-shadow: 0 .5rem 7rem rgb(0, 0, 0)
+    
+}
+/*puma*/
+#pumar
+{
+    background: url(imgbg/puma.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#pumar .content span{
+    color: rgb(0, 0, 0);
+    font-size: 5rem;
+    letter-spacing: 8px;
+}
+#pumar .content h3{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+#pumar .content a{
+    display: inline-block;
+    margin-top: 1.5rem;   
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    background: rgb(121, 120, 120);
+    padding: .8rem 3rem;
+    color:#ffffff;
+    
+}
+#pumar .content a:hover{
+    
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .7s;
+    font-size: 3rem;
+    box-shadow: 0 .5rem 7rem rgb(0, 0, 0)
+}
+/*adidas*/
+#adidas
+{
+    background: url(imgbg/adidas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#adidas .content span{
+    color: #8879bf;
+    font-size: 5rem;
+    letter-spacing: 8px;
+}
+#adidas .content h3{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    
+}
+#adidas .content a{
+    display: inline-block;
+    margin-top: 1.5rem;   
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    background: rgb(194, 105, 209);
+    padding: .8rem 3rem;
+    color:#000000;
+    
+}
+#adidas .content a:hover{
+    
+    background: #8879bf;
+    color: rgb(0, 0, 0);
+    transition: .7s;
+    font-size: 3rem;
+    box-shadow: 0 .5rem 7rem #6946e7;
+    
+}
+
+
+
+
+
+
+
+/** feedback section  **/
+.blog 
+{
+         display: flex;
+        align-items: center;
+         flex-direction: column;
+
+}
+.blog  span
+{
+    color: #5B0888;
+}
+.blog span, .blog h1
+{
+    font-size: 4rem;
+}
+
+.blog .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.blog .box-container .box{
+    flex: 1 1 30rem;
+    text-align: center;
+    background: #eaabff90;
+    padding: 2rem;
+}
+.blog .box-container .box img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem 0;
+    border: 4px solid #ddd;
+}
+.blog .box-container .box img:hover{
+    transform: scale(1.1);
+}
+.blog .box-container .box h3{
+    font-size: 2.5rem;
+    color: #000;
+}
+.blog .box-container .box p{
+    font-size: 1.6rem;
+    color: #713087;
+    padding: 1rem 0;
+}
+.blog .box-container .box .stars i{
+    color: orangered;
+    font-size: 2rem;
+}
+
+.blog .box-container .box:hover{
+    flex: 13 13 43rem;
+    text-align: center;
+    background: #a365c5;;
+    padding: 1.5rem;
+    transform: scaleX(1.1);
+    transition: all .2s;
+}
+
+.news{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.news .content{
+    text-align: center;
+    background: #5B0888;
+    padding: 2rem;
+}
+.news .content h3{
+    font-size: 2.9rem;
+    color: #000;
+}
+.news .content p{
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 1rem auto;
+    max-width: 60rem;
+}
+.news .content form{
+    margin:  1rem auto;
+    max-width: 50rem;
+    display: flex;  
+}
+
+.news .content form .email{
+    width: 100%;
+    font-size: 1.7rem;
+    text-transform: none;
+    color: #000000;
+    padding: 1rem;  
+    margin-top: 1rem;
+}
+.news .content form .btn{
+    border-radius: none;
+    width: 10rem;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive  */
+@media (max-width:768px){
+    #menu-bar{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 50%;
+        background: #ffffff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        opacity: 1;
+    }
+    header .navbar a{
+        font-size: 2rem;   
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+}
